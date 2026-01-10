@@ -1,6 +1,6 @@
 """Tests for validator module."""
 
-from agentskills.validator import validate
+from skills_ref.validator import validate
 
 
 def test_valid_skill(tmp_path):

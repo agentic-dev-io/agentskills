@@ -1,6 +1,6 @@
 """Tests for prompt module."""
 
-from agentskills.prompt import to_prompt
+from skills_ref.prompt import to_prompt
 
 
 def test_empty_list():

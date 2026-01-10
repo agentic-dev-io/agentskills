@@ -35,7 +35,7 @@ agentskills to-prompt path/to/skill-a path/to/skill-b
 
 ```python
 from pathlib import Path
-from agentskills import validate, read_properties, to_prompt
+from skills_ref import validate, read_properties, to_prompt
 
 # Validate a skill directory
 errors = validate(Path("my-skill"))
