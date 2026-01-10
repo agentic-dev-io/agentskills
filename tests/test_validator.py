@@ -1,6 +1,6 @@
 """Tests for validator module."""
 
-from skills_ref.validator import validate
+from agentskills.validator import validate
 
 
 def test_valid_skill(tmp_path):
@@ -171,7 +171,7 @@ name: 技能
 description: A skill with Chinese name
 ---
 Body
-""")
+""", encoding='utf-8')
     errors = validate(skill_dir)
     assert errors == []
 
@@ -185,7 +185,7 @@ name: мой-навык
 description: A skill with Russian name
 ---
 Body
-""")
+""", encoding='utf-8')
     errors = validate(skill_dir)
     assert errors == []
 
@@ -199,7 +199,7 @@ name: навык
 description: A skill with Russian lowercase name
 ---
 Body
-""")
+""", encoding='utf-8')
     errors = validate(skill_dir)
     assert errors == []
 
@@ -213,7 +213,7 @@ name: НАВЫК
 description: A skill with Russian uppercase name
 ---
 Body
-""")
+""", encoding='utf-8')
     errors = validate(skill_dir)
     assert any("lowercase" in e for e in errors)
 
@@ -285,6 +285,6 @@ name: {decomposed_name}
 description: A test skill
 ---
 Body
-""")
+""", encoding='utf-8')
     errors = validate(skill_dir)
     assert errors == [], f"Expected no errors, got: {errors}"

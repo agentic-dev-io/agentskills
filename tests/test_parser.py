@@ -2,7 +2,7 @@
 
 import pytest
 
-from skills_ref.parser import (
+from agentskills.parser import (
     ParseError,
     ValidationError,
     find_skill_md,
