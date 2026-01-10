@@ -7,13 +7,13 @@ Skills are folders of instructions, scripts, and resources that agents can disco
 ## Installation
 
 ```bash
-pip install agentskills-sdk
+pip install skills-ref
 ```
 
 Or using [uv](https://docs.astral.sh/uv/):
 
 ```bash
-uv add agentskills-sdk
+uv add skills-ref
 ```
 
 ## Quick Start
