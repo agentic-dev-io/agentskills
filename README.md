@@ -1,5 +1,7 @@
 # Agent Skills
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/N4N71WOHZ3)
+
 [Agent Skills](https://agentskills.io) are a simple, open format for giving agents new capabilities and expertise.
 
 Skills are folders of instructions, scripts, and resources that agents can discover and use to perform better at specific tasks. Write once, use everywhere.
